@@ -51,8 +51,15 @@ def divide(x, y):
 def pow(x, y):
     return x ** y
 
-def sqrt(x, y):
-    return x ** (1 / y)
+def root(x, y):
+    if x > 0:
+        if y == 0:
+            return 1
+        else:
+            return x ** (1 / y)
+    else:
+        return print("num1 should be positive")
+        
 
 def calculator(s):
     x = float(input("Enter first number:"))
@@ -69,7 +76,7 @@ def calculator(s):
     elif s == "5":
         print(pow(x, y))
     elif s == '6':
-        print(sqrt(x, y))
+        print(root(x, y))
 
 def hello():
     print(".---.  .---.     .-''-.    .---.     .---.       ,-----.             _______     ___    _  ______      ______        ____     __  ")
