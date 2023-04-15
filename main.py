@@ -59,7 +59,7 @@ def root(x, y):
             return x ** (1 / y)
     else:
         if (y % 2) == 1:
-            return (x ** (1.0 / y))
+            return (-(-x) ** (1.0 / y))
         return ("num1 should be positive")
 
 def calculator(s):
