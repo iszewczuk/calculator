@@ -44,7 +44,7 @@ def multiply(x, y):
 
 def divide(x, y):
     if y == 0:
-        print("Division by zero not allowed")
+        return ("Division by zero not allowed")
     else:
         return x / y
 
@@ -58,8 +58,9 @@ def root(x, y):
         else:
             return x ** (1 / y)
     else:
-        return print("num1 should be positive")
-        
+        if (y % 2) == 1:
+            return (x ** (1.0 / y))
+        return ("num1 should be positive")
 
 def calculator(s):
     x = float(input("Enter first number:"))
